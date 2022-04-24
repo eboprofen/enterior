@@ -12,18 +12,6 @@ videoTagString({
   poster: "/assets/images/bg/bg-image-24.jpg",
 });
 
-const SlideList = [
-  {
-    textPosition: "text-center",
-    category: "Have a Studio Agency",
-    title: "Welcome Video Studio",
-    description:
-      "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
-    buttonText: "Learn More",
-    buttonLink: "/contact",
-  },
-];
-
 class StudioAgency extends Component {
   constructor() {
     super();
