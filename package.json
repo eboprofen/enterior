@@ -1,8 +1,7 @@
 {
-  "name": "Imroz",
+  "name": "Enterior",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://imroz.rainbowit.net/",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
