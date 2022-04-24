@@ -5,6 +5,7 @@ import FooterTwo from "../component/footer/FooterTwo";
 import { videoTagString, VideoTag } from "react-video-tag";
 import Helmet from "../component/common/Helmet";
 import Testimonial from "../elements/Testimonial";
+import Countdown from "react-countdown";
 import DateCountdown from "react-date-countdown-timer";
 import { FaHeart } from "react-icons/fa";
 
@@ -39,10 +40,39 @@ class StudioAgency extends Component {
           }}
         >
           <div className="countdown">
-            <DateCountdown
-              dateTo="May 31, 2022 00:00:00 GMT+03:00"
-              callback={() => console.log("done")}
-            />
+            <p class="countdown__text">BETA launch:</p>
+            {/* <DateCountdown dateTo="May 31, 2022 00:00:00 GMT+08:00" /> */}
+            <Countdown
+              date="2022-05-31T00:00:00"
+              renderer={(props) => (
+                <div className="countdown__outer">
+                  <div>
+                    <div className="countdown__box">
+                      <p className="countdown__title">{props.days}</p>
+                    </div>
+                    <p class="countdown__description">Days</p>
+                  </div>
+                  <div>
+                    <div className="countdown__box">
+                      <p className="countdown__title">{props.hours}</p>
+                    </div>
+                    <p class="countdown__description">Hours</p>
+                  </div>
+                  <div>
+                    <div className="countdown__box">
+                      <p className="countdown__title">{props.minutes}</p>
+                    </div>
+                    <p class="countdown__description">Minutes</p>
+                  </div>
+                  <div>
+                    <div className="countdown__box">
+                      <p className="countdown__title">{props.seconds}</p>
+                    </div>
+                    <p class="countdown__description">Seconds</p>
+                  </div>
+                </div>
+              )}
+            ></Countdown>
           </div>
         </div>
 
@@ -155,9 +185,7 @@ class StudioAgency extends Component {
                   </a>
                 </div>
               </div>
-              <div
-                className="library__card-non-hover"
-              >
+              <div className="library__card-non-hover">
                 <img
                   src="/assets/images/grid/Landscape.png"
                   className="library__column-image"

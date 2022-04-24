@@ -151,7 +151,7 @@
 
 .countdown {
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 25vh;
   font-size: 50px;
   color: var(--color-primary);
   font-family: "Century";
@@ -313,4 +313,32 @@ video {
   .countdown {
     font-weight: bold;
   }
+}
+
+.countdown__text {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.countdown__outer {
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+}
+
+.countdown__box {
+  padding: 10px 50px;
+  border: 1px solid #f78d1f;
+}
+
+.countdown__title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.countdown__description {
+  font-size: 25px;
 }
