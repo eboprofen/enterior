@@ -51,7 +51,7 @@ class StudioAgency extends Component {
             <VideoTag
               width="100%"
               autoPlay={`${true}`}
-              muted={`${true}`}
+              muted={`false`}
               playsInline={`${true}`}
               loop={`${true}`}
               src={`${"/assets/images/service/landing.mp4"}`}
@@ -95,9 +95,9 @@ class StudioAgency extends Component {
                 </div>
               </div>
               <div className="library__big-card">
-                <div className="library__card">
+                <div className="library__card-non-hover">
                   <img
-                    src="/assets/images/grid/grid_1.png"
+                    src="/assets/images/grid/Banner.png"
                     className="library__column-image"
                   />
                 </div>
@@ -156,11 +156,10 @@ class StudioAgency extends Component {
                 </div>
               </div>
               <div
-                className="library__card"
-                style={{ width: "calc(50% - 20px)" }}
+                className="library__card-non-hover"
               >
                 <img
-                  src="/assets/images/grid/grid_6.png"
+                  src="/assets/images/grid/Landscape.png"
                   className="library__column-image"
                 />
               </div>
@@ -267,7 +266,12 @@ class StudioAgency extends Component {
                 <div className="section-title text-center mb--25 mb_sm--0">
                   <h2 className="title">Services</h2>
                 </div>
-                <div className="services__main_title">For clients</div>
+                <div
+                  className="services__main_title"
+                  style={{ marginTop: "0" }}
+                >
+                  For clients
+                </div>
                 <div className="services__row">
                   <div className="services__card">
                     <img

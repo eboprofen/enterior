@@ -206,6 +206,13 @@
   position: relative;
 }
 
+.library__card-non-hover {
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
 .library__heart {
   display: none;
   width: 40px;
@@ -218,7 +225,7 @@
 }
 
 .library__card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.5s;
   display: block;
   z-index: 1;

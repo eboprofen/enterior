@@ -8,12 +8,9 @@ class Testimonial extends Component {
           <div className="col-lg-12">
             <Tabs>
               <div className="row align-items-center">
-                <div className="col-lg-6">
+                <div className="col-lg-4">
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>Text here</p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span> Batbold Ariunbat </span> - CEO, Co-Founder
@@ -25,9 +22,6 @@ class Testimonial extends Component {
 
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>Text here</p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span>Batsoyombo Batchuluun </span> - CFO
@@ -38,9 +32,6 @@ class Testimonial extends Component {
 
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>Text here</p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span>Abulkhair Gylymkhan </span> - CTO
@@ -51,9 +42,6 @@ class Testimonial extends Component {
 
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>Text here</p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span>Ankhmaa Batchuluun </span> - Partner (CEO,
@@ -65,9 +53,6 @@ class Testimonial extends Component {
 
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>Text here</p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span>Luis Herrasti </span> - Co-Founder (Co-Founder
@@ -79,13 +64,6 @@ class Testimonial extends Component {
 
                   <TabPanel>
                     <div className="rn-testimonial-content text-left">
-                      <div className="inner">
-                        <p>
-                          Chunk of Lorem Ipsum used since the 1500s is
-                          reproduced below for those interested. Sections
-                          Bonorum et Malorum original.
-                        </p>
-                      </div>
                       <div className="author-info">
                         <h6>
                           <span>Orthi </span> - COO, AMERIMAR ENTERPRISES, INC.
@@ -129,7 +107,7 @@ class Testimonial extends Component {
                     </div>
                   </TabPanel>
                 </div>
-                <div className="col-lg-6 mt_md--40 mt_sm--40">
+                <div className="col-lg-8 mt_md--40 mt_sm--40">
                   <TabList className="testimonial-thumb-wrapper">
                     <Tab>
                       <div className="testimonial-thumbnai">
