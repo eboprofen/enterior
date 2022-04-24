@@ -43,33 +43,27 @@ class StudioAgency extends Component {
             <p class="countdown__text">BETA launch:</p>
             {/* <DateCountdown dateTo="May 31, 2022 00:00:00 GMT+08:00" /> */}
             <Countdown
-              date="2022-05-31T00:00:00"
+              date="2022-05-31T01:00:00"
               renderer={(props) => (
                 <div className="countdown__outer">
-                  <div>
-                    <div className="countdown__box">
-                      <p className="countdown__title">{props.days}</p>
-                    </div>
-                    <p class="countdown__description">Days</p>
-                  </div>
-                  <div>
-                    <div className="countdown__box">
-                      <p className="countdown__title">{props.hours}</p>
-                    </div>
-                    <p class="countdown__description">Hours</p>
-                  </div>
-                  <div>
-                    <div className="countdown__box">
-                      <p className="countdown__title">{props.minutes}</p>
-                    </div>
-                    <p class="countdown__description">Minutes</p>
-                  </div>
-                  <div>
-                    <div className="countdown__box">
-                      <p className="countdown__title">{props.seconds}</p>
-                    </div>
-                    <p class="countdown__description">Seconds</p>
-                  </div>
+                  <p className="countdown__title">
+                    {props.days +
+                      ":" +
+                      props.hours.toLocaleString("en-US", {
+                        minimumIntegerDigits: 2,
+                        useGrouping: false,
+                      }) +
+                      ":" +
+                      props.minutes.toLocaleString("en-US", {
+                        minimumIntegerDigits: 2,
+                        useGrouping: false,
+                      }) +
+                      ":" +
+                      props.seconds.toLocaleString("en-US", {
+                        minimumIntegerDigits: 2,
+                        useGrouping: false,
+                      })}
+                  </p>
                 </div>
               )}
             ></Countdown>
