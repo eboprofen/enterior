@@ -198,6 +198,80 @@
   font-size: 20px;
 }
 
+.library__card {
+  background-color: black;
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.library__heart {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: #fff;
+  bottom: 32px;
+  font-size: 40px;
+  right: 16px;
+}
+
+.library__card:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  display: block;
+  z-index: 1;
+}
+
+.library__card:hover .library__title {
+  display: block;
+}
+
+.library__card:hover .library__heart {
+  display: block;
+}
+
+.library__card:hover .library__column-image {
+  opacity: 0.5;
+}
+
+.library__title {
+  transition: 0.5s;
+  display: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.library__main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px 32px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.library__column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.library__big-card {
+  display: flex;
+  gap: 20px;
+}
+
+.library__column-image {
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 1199px) {
   .services__icon {
     width: 150px;
@@ -205,6 +279,9 @@
   }
   .countdown {
     font-size: 40px;
+  }
+  .library__main {
+    grid-template-columns: auto auto;
   }
 }
 
@@ -216,6 +293,13 @@
   .countdown {
     font-size: 30px;
   }
+  .library__main {
+    grid-template-columns: auto;
+  }
+}
+
+video {
+  width: 100% !important;
 }
 
 @media only screen and (max-width: 575px) {

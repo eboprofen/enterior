@@ -6,6 +6,7 @@ import { videoTagString, VideoTag } from "react-video-tag";
 import Helmet from "../component/common/Helmet";
 import Testimonial from "../elements/Testimonial";
 import DateCountdown from "react-date-countdown-timer";
+import { FaHeart } from "react-icons/fa";
 
 videoTagString({
   src: "/assets/images/service/video.mp4",
@@ -46,8 +47,9 @@ class StudioAgency extends Component {
         </div>
 
         <div className="slider-wrapper">
-          <div className="video-background">
+          <div className="video-background" style={{ width: "100%" }}>
             <VideoTag
+              width="100%"
               autoPlay={`${true}`}
               muted={`${true}`}
               playsInline={`${true}`}
@@ -58,30 +60,199 @@ class StudioAgency extends Component {
           </div>
         </div>
 
-        <div>
-          <div className="row">
-            <div className="col-lg-12" style={{ marginTop: 100 }}>
-              <div className="section-title text-center mb--25 mb_sm--0">
-                <h2 className="title">Design Library</h2>
+        <div className="rn-team-area ptb--120 bg_color--5">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center mb--25 mb_sm--0">
+                  <h2 className="title">Design Library</h2>
+                </div>
               </div>
-              <div className="work__outer">
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+            </div>
+          </div>
+          <div className="library__main">
+            <div className="library__column">
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_1.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Black It Is Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
                 </div>
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_2.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Moodsy Small Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
                 </div>
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+              </div>
+              <div className="library__big-card">
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_1.png"
+                    className="library__column-image"
+                  />
                 </div>
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 20,
+                    flexDirection: "column",
+                    width: "100%",
+                  }}
+                >
+                  <div className="library__card">
+                    <img
+                      src="/assets/images/grid/grid_3.png"
+                      className="library__column-image"
+                    />
+                    <p className="library__title">B House Dining</p>
+                    <a className="library__heart">
+                      <FaHeart />
+                    </a>
+                  </div>
+                  <div className="library__card">
+                    <img
+                      src="/assets/images/grid/grid_4.png"
+                      className="library__column-image"
+                    />
+                    <p className="library__title">B Main Area</p>
+                    <a className="library__heart">
+                      <FaHeart />
+                    </a>
+                  </div>
                 </div>
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+              </div>
+            </div>
+            <div className="library__column">
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_5.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Moodsy</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
                 </div>
-                <div className="work__grid">
-                  <img src="/assets/images/grid/grid_1.png" alt="" />
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_6.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Hidden Hills Living Area</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+              </div>
+              <div
+                className="library__card"
+                style={{ width: "calc(50% - 20px)" }}
+              >
+                <img
+                  src="/assets/images/grid/grid_6.png"
+                  className="library__column-image"
+                />
+              </div>
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_7.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Moodsy Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_8.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Hell's Kitchen</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="library__column">
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_9.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Hidden Hills Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_10.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">La Valentina Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+              </div>
+
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_11.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Nergu Main Area</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_12.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Black It Is Living Area</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+              </div>
+              <div style={{ display: "flex", gap: 20 }}>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_13.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Nergu Kitchen</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
+                </div>
+                <div className="library__card">
+                  <img
+                    src="/assets/images/grid/grid_14.png"
+                    className="library__column-image"
+                  />
+                  <p className="library__title">Hell's Kitchen Bedroom</p>
+                  <a className="library__heart">
+                    <FaHeart />
+                  </a>
                 </div>
               </div>
             </div>
